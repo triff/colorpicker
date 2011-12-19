@@ -23,7 +23,7 @@ That's it! Tweak the settings and go.
 
 - bind: An event to bind the colorpicker to, defaults to "click".
 - callback: A function to be called when the color is updated. It will be passed the color and the element that it was called on.
-- color: A default color to be used when initialized.
+- color: A default color to be used when no value is found. This can also be set to a function that returns the color, it will be passed the element that it was called on.
 - position: Can be set to "below" or "right".
 
 ## A note on callback

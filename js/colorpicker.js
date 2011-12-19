@@ -64,7 +64,8 @@
     cpk.reposition();
     
     var color = cpk._parent.val();
-    if (!color.match(/#[0-9a-f]{6}/i)) color = cpk.settings.color;
+    if (!color.match(/^#[0-9a-f]{6}$/i))
+      color = (typeof cpk.settings.color == "function") ? cpk.settings.color(cpk._parent) : cpk.settings.color;
     if (color) cpk.set(color);
   }
   
