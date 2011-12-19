@@ -1,0 +1,47 @@
+#cpk-colorpicker {
+  background-color: #444;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+#cpk-sat-picker {
+  background: #ff0000 url(../images/saturation.png) no-repeat;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/saturation.png', sizingMethod='scale');
+  border: 1px solid #222;
+  cursor: crosshair;
+  float: left;
+  height: 166px;
+  position: relative;
+  width: 166px;
+}
+
+  #cpk-sat-picker .cpk-cursor {
+    background: url(../images/sat-cursor.gif) no-repeat;
+    height: 9px;
+    position: absolute;
+    width: 9px;
+  }
+
+#cpk-hue-picker {
+  background: url(../images/hue.png) no-repeat;
+  border: 1px solid #000;
+  cursor: pointer;
+  float: left;
+  height: 166px;
+  margin-left: 8px;
+  position: relative;
+  width: 19px;
+}
+
+  #cpk-hue-picker .cpk-cursor {
+    background: url(../images/hue-cursor.gif) no-repeat;
+    height: 7px;
+    position: absolute;
+    right: -4px;
+    width: 27px;
+  }
